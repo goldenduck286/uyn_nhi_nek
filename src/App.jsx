@@ -8,8 +8,21 @@ const phrases = [
   "I'll be very sad😕",
   "Pookie Please🥺",
   "Don't do this to me🫤",
-  "I'm gonna cry..😭",
   "You are breaking my heart😭💔",
+  "Pookie, you're my last hope😟",
+  "Can't we find a compromise?😖",
+  "Think of all the good times we've had👫",
+  "Isn't there anything I can say to change your mind?🗣️",
+  "I promise to make it up to you, whatever it takes!🤲",
+  "Just give me one more chance, please?🙏",
+  "I don't know what I'd do without you😞",
+  "This means everything to me🌍💔",
+  "Say something, don't leave me hanging...😔",
+  "Remember our promises to each other?💑",
+  "Is there really no way to make this work?💭",
+  "I'll do anything, just don't say it's over...🆘",
+  "Please... I'm begging you...😢🙏.",
+  "I'm gonna cry..😭"
 ]
 
 function App() {
@@ -17,12 +30,12 @@ function App() {
   const [yesPressed, setYesPressed] = useState(false);
   const yesButtonSize = noCount * 20 + 16;
 
-  
+
   function handleYesClick() {
     setYesPressed(true)
   }
   function handleNoClick() {
-    setNoCount(noCount+1);
+    setNoCount(noCount + 1);
   }
 
   function getNoButtonText() {
@@ -42,14 +55,14 @@ function App() {
           <div className='text'>Will you be my valentine 🌹?</div>
           <div className='both-Button'>
             <button className='yesButton'
-            style={{ fontSize: yesButtonSize , backgroundColor:'rgb(248, 229, 89)'}}
+              style={{ fontSize: yesButtonSize, backgroundColor: 'rgb(248, 229, 89)' }}
               onClick={handleYesClick}
             >
               Yes 🙈
             </button>
             <button
               className='NoButton'
-              style={{ }}
+              style={{}}
               onClick={handleNoClick}
             >
               {getNoButtonText()}
