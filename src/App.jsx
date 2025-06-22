@@ -40,7 +40,7 @@ function App() {
 
   function getNoButtonText() {
     return phrases[Math.min(noCount, phrases.length - 1)];
-  }
+  }``
 
   return (
     <div className='valentine-container'>
@@ -52,17 +52,17 @@ function App() {
       ) : (
         <>
           <img className='kiss' src="https://media1.tenor.com/m/al4a1pG1f8YAAAAC/jump-bear.gif" alt="bear with heart" />
-          <div className='text'>Will you be my valentine 🌹?</div>
+          <div className='text'>Would you like to be my girlfriend 🌹?</div>
           <div className='both-Button'>
             <button className='yesButton'
-              style={{ fontSize: yesButtonSize, backgroundColor: 'rgb(248, 229, 89)' }}
+              style={{ fontSize: yesButtonSize, backgroundColor: 'rgb(248, 229, 89)',marginRight: '10px' }}
               onClick={handleYesClick}
             >
               Yes 🙈
             </button>
             <button
               className='NoButton'
-              style={{}}
+              style={{fontSize:'16px'}}
               onClick={handleNoClick}
             >
               {getNoButtonText()}
